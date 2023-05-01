@@ -1,7 +1,7 @@
 import {Form} from "@remix-run/react";
 import { redirect } from "@remix-run/node";
 import db from "../services/db";
-import z from "zod";
+import {z} from "zod";
 export default function Login() {
   return (
     <main>

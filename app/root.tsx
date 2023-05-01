@@ -6,10 +6,20 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
 import { LinksFunction } from "@remix-run/node";
 
 import Navigation from "~/components/Navigation";
 import styles from "./styles/tailwind.css";
+
+export const links: LinksFunction = () => {
+  return[
+    {
+      rel: "stylesheet",
+      href: styles,
+    },
+  ];
+}
 
 export default function App() {
   return (
@@ -21,7 +31,7 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-slate-700 w-screen h-screen overflow-hidden">
-        <Navigation/>
+        <Navigation />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
@@ -30,12 +40,3 @@ export default function App() {
     </html>
   );
 }
-export const links: LinksFunction = () => {
-  return[
-    {
-      rel: "stylesheet",
-      href: styles,
-    },
-  ];
-}
-
