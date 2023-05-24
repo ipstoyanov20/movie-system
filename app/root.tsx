@@ -30,7 +30,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-slate-700 w-screen h-screen overflow-hidden">
+      <body className="bg-[#606c38] w-screen h-screen overflow-hidden">
         <Navigation />
         <Outlet />
         <ScrollRestoration />

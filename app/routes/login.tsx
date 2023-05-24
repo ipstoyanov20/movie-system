@@ -5,22 +5,21 @@ import {z} from "zod";
 export default function Login() {
   return (
     <main>
-      <div className="grid place-content-center place-items-center grid-rows-2 ">
-        <h1 className="text-center row-span-full">
-          <p className="text-white text-5xl bg-green-700 p-5 rounded-2xl ">My Login Form</p>
-        </h1>
-          <Form method="POST" className="grid row-auto gap-3">
+      <div className="absolute grid w-full h-full place-content-center place-items-center ">
+          <p className="text-[#faedcd] text-3xl bg-[#283618] p-5 rounded-md ">Form</p>
+
+          <Form method="POST" className="grid relative gap-3">
             {/* username */}
-            <label className="text-white text-left rounded-md text-2xl w-full" htmlFor="username">Username</label>
-            <input className="h-8 w-full rounded-md" type="text" name="username"/>
+            <label className="text-[#faedcd] text-left rounded-md text-2xl w-full" htmlFor="username">Username</label>
+            <input className="h-8 w-full rounded-md bg-[#faedcd]" type="text" name="username"/>
             {/* email */}
-            <label className="text-white text-left rounded-md text-2xl w-full" htmlFor="email">Email</label>
-            <input className="h-8 w-full rounded-md" type="email" name="email" required/>
+            <label className="text-[#faedcd] text-left rounded-md text-2xl w-full" htmlFor="email">Email</label>
+            <input className="h-8 w-full rounded-md bg-[#faedcd]" type="email" name="email" required/>
             {/* password */}
-            <label className="text-white text-left rounded-md text-2xl  w-full" htmlFor="password">Password</label>
-            <input className="h-8 w-full rounded-md" type="password" name="password" required />
+            <label className="text-[#faedcd] text-left rounded-md text-2xl w-full" htmlFor="password">Password</label>
+            <input className="h-8 w-full rounded-md bg-[#faedcd]" type="password" name="password" required />
             
-            <button className="hover:bg-green-950 bg-green-700 rounded-2xl p-4 text-white text-3xl w-full" type="submit">Login</button>
+            <button className="hover:bg-[#132a13] bg-[#283618] rounded-md p-5 text-[#faedcd] text-3xl w-full" type="submit">Register</button>
           </Form>
       </div>
     </main>

@@ -2,11 +2,11 @@ import { NavLink } from "react-router-dom";
 export default function Navigation() {
   //impolemets the navigation bar with remix reserved tags
   return (
-    <nav className="bg-transparent ml-6 mt-6 grid grid-cols-2 gap-2 w-64">
-      <NavLink className=" text-white text-center bg-green-800 rounded-2xl p-4 hover:bg-green-950" to="/">
+    <nav className="bg-transparent grid mt-2 ml-2 grid-cols-2 gap-2 w-64">
+      <NavLink className=" text-[#faedcd] text-center bg-[#283618] rounded-md p-4 hover:bg-[#132a13]" to="/">
         Home
       </NavLink>
-      <NavLink className=" text-white text-center bg-green-800 rounded-2xl p-4 hover:bg-green-950" to="/login">
+      <NavLink className=" text-[#faedcd] text-center bg-[#283618] rounded-md p-4 hover:bg-[#132a13]" to="/login">
         Login
       </NavLink>
     </nav>
