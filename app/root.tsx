@@ -11,6 +11,7 @@ import { LinksFunction } from "@remix-run/node";
 
 import Navigation from "~/components/Navigation";
 import styles from "./styles/tailwind.css";
+import MovableFilm from "./components/MovableFilm";
 
 export const links: LinksFunction = () => {
   return[
@@ -30,8 +31,9 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#606c38] w-screen h-screen overflow-hidden">
+      <body className="bg-[#606c38] w-screen h-screen relative overflow-hidden">
         <Navigation />
+        <MovableFilm />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
