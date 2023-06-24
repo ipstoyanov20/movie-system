@@ -31,7 +31,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#606c38] w-screen h-screen relative overflow-hidden">
+      <body className="bg-[#393E46] w-screen h-screen relative overflow-hidden">
         <Navigation />
         <MovableFilm />
         <Outlet />
