@@ -6,7 +6,7 @@ export default function Login() {
   return (
     <main>
       <div className="absolute grid w-full h-full place-content-center place-items-center ">
-          <p className="text-[#EEEEEE] text-3xl bg-[#FFD369] p-5 rounded-md ">Form</p>
+          <p className="text-black text-3xl bg-[#FFD369] p-5 rounded-md ">Form</p>
 
           <Form method="POST" className="grid relative gap-3">
             {/* username */}

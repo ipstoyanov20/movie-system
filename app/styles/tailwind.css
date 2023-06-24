@@ -530,8 +530,20 @@ video {
   position: relative;
 }
 
-.top-36 {
-  top: 9rem;
+.right-full {
+  right: 100%;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
+.top-\[40rem\] {
+  top: 40rem;
 }
 
 .m-5 {
@@ -592,7 +604,7 @@ video {
 
 @keyframes cross {
   0% {
-    left: -20%;
+    left: -50%;
     opacity: 0.5;
   }
 
@@ -603,7 +615,49 @@ video {
 }
 
 .animate-cross {
-  animation: cross 20s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: cross 25s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes cross {
+  0% {
+    left: -50%;
+    opacity: 0.5;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0.2;
+  }
+}
+
+.animate-lastDelayed {
+  animation: cross 25s infinite 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes cross {
+  0% {
+    left: -50%;
+    opacity: 0.5;
+  }
+
+  100% {
+    left: 120%;
+    opacity: 0.2;
+  }
+}
+
+.animate-middleDilayed {
+  animation: cross 25s infinite 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .grid-cols-2 {
