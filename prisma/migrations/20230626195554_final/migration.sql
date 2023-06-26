@@ -10,8 +10,7 @@ CREATE TABLE [dbo].[User] (
     [password] NVARCHAR(1000) NOT NULL,
     CONSTRAINT [User_pkey] PRIMARY KEY CLUSTERED ([id]),
     CONSTRAINT [User_email_key] UNIQUE NONCLUSTERED ([email]),
-    CONSTRAINT [User_username_key] UNIQUE NONCLUSTERED ([username]),
-    CONSTRAINT [User_password_key] UNIQUE NONCLUSTERED ([password])
+    CONSTRAINT [User_username_key] UNIQUE NONCLUSTERED ([username])
 );
 
 COMMIT TRAN;

@@ -542,14 +542,6 @@ video {
   top: 24rem;
 }
 
-.top-\[40rem\] {
-  top: 40rem;
-}
-
-.top-\[30rem\] {
-  top: 30rem;
-}
-
 .top-\[35rem\] {
   top: 35rem;
 }
@@ -576,10 +568,6 @@ video {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .h-full {
