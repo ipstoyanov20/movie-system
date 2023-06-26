@@ -12,7 +12,7 @@ export default function MovableFilm() {
       />
       <img
         src="https://www.cinemacity.bg/xmedia-cw/repo/feats/posters/5588S3R-md.jpg"
-        className="absolute  top-[40rem] right-full animate-lastDelayed rounded-md w-32 h-44"
+        className="absolute top-[35rem] right-full animate-lastDelayed rounded-md w-32 h-44"
       />
     </div>
   );
