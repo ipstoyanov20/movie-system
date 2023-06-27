@@ -7,7 +7,7 @@ export default function Navigation() {
         Home
       </NavLink>
       <NavLink className=" hover:text-[#EEEEEE] text-black transition-all text-center bg-[#FFD369] rounded-md p-4 hover:bg-[#222831]" to="/login">
-        Login
+        Register
       </NavLink>
     </nav>
   );
